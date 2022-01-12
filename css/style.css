@@ -1,0 +1,215 @@
+/*
+Theme Name: KenzieFlix
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+
+/*BODY*/
+body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #00002e;
+	width: 858px;
+
+}
+
+/*TOPO*/
+header.topo {
+    
+	display: flex;
+	justify-content: center;
+	margin-bottom: 7%;
+	
+
+}
+
+header.topo figcaption {
+
+	display: none;
+
+}
+
+header {
+
+	display: flex;
+	justify-content: center;
+}
+
+header h2 {
+    
+	font-size: 3em;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 9%;
+}
+
+/*PÁGINA INICIAL*/
+div.pg-home {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.box-usuarios {
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+    flex-wrap: wrap;
+	width: 858px;
+	list-style: none;
+	margin-bottom: 3%;
+}
+
+.box-usuarios li {
+
+	display: flex;
+	flex-direction: column;
+	width: 186px;
+	margin-right: 14%;
+	
+}
+
+.box-usuarios li h3 {
+
+	display: flex;
+	color: rgb(167, 164, 164);
+	align-self: center;
+	margin-top: 20%;
+	margin-bottom: 20%;
+	
+}
+
+.box-usuarios li img {
+
+	display: flex;
+	max-width: 186px;
+	
+}
+
+.box-usuarios figure {
+	
+	width: 186px;
+}
+
+.box-usuarios li figcaption {
+
+	display: none;
+}
+
+.first-row {
+
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.second-row {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.addPerfil figure img {
+
+	padding: 37px;
+	
+}
+
+/*RODAPÉ*/
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+    
+	width: 268px;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 30px;
+	border: 1px solid white;
+	background-color: #00002e;
+	color: rgb(167, 164, 164);
+	margin-bottom: 5%;
+}
+
+
+
+
+@media (min-width: 1080px) {
+
+	body {
+
+		background-color: #00002e;
+		width: 100%;
+		
+	}
+
+	.box-usuarios li {
+
+		margin-right: 19%;
+	}
+
+	.box-usuarios li img:hover {
+		border:1px solid white;
+		cursor: pointer;
+	}
+
+	.addPerfil {
+		margin-left: -10%;
+	}
+
+	.addPerfil figure img:hover {
+
+		border: none;
+	}
+
+	section {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	header.topo {
+
+		display: flex;
+		justify-content: flex-start;
+
+	}
+
+	header h2 {
+    
+		font-size: 4em;
+		font-weight: bold;
+		color: white;
+		margin-bottom: 5%;
+		margin-top: 1%;
+	}
+
+	.box-usuarios {
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-self: center;
+		list-style: none;
+	}
+
+
+}
